@@ -9,8 +9,6 @@ This app helps users manage daily tasks efficiently with features like add, dele
 
 ✅ Mark todos as Completed / Undo
 
-✏️ Edit existing todos
-
 🗑️ Delete individual todos
 
 🧹 Clear all todos at once
