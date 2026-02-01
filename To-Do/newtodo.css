@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(155deg, #66c7ea, #9b234b);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.app-card {
+  background: #f8f7f3;
+  width: 480px;
+  margin-top: 40px;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.2);/*Floating  Effect Provider*/
+}
+#main-heading {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+.input-row {
+  display: grid;
+  grid-template-columns: 1fr 140px 90px;
+  gap: 10px;
+}
+#todo-input,
+#todo-date {
+  padding: 12px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #b19999;
+  outline: none;
+}
+
+#todo-input:focus,
+#todo-date:focus {
+  border-color: #667eea;
+}
+.btn-todo {
+  background: linear-gradient(135deg, #43cea2, #185a9d);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-todo:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);/*6px (Vertical Offset): The shadow is pushed 6 pixels down, which makes the light source appear to be coming from directly above the element.
+18px (Blur Radius): A relatively high value that makes the shadow's edges very soft and diffused rather than sharp.*/
+}
+
+.btn-delete {
+  background: linear-gradient(135deg, #ff512f, #dd2476);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.btn-delete:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);}
+.todo-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column; 
+  gap: 5px;
+  
+}
+.todo-row {
+  display: grid;
+  grid-template-columns: 1fr 120px 200px;
+  align-items: center;
+  gap: 15px;
+}
+.actions {
+  display: flex;
+  gap: 8px;
+}
+.todo-row span {
+  font-size: 15px;
+  color: #181818;
+  font-weight: 500;
+}
+.completed {
+  text-decoration: line-through;
+  color: rgb(214, 12, 12);
+  opacity: 0.7;
+}
+.clear-all {
+  width: 100%;
+  margin-top: 20px;
+}

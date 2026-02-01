@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Todo App</title>
+  <link rel="stylesheet" href="newtodo.css">
+</head>
+<body>
+
+  <div class="app-card">
+    <h1 id="main-heading">📝 Todo App</h1>
+
+    <!-- INPUT ROW -->
+    <div class="input-row">
+      <input id="todo-input" type="text" placeholder="Enter todo">
+      <input id="todo-date" type="date">
+      <button class="btn-todo" onclick="addTodo()">Add</button>
+    </div>
+
+    <!-- TODOS -->
+    <div class="todo-container"></div>
+
+    <!-- CLEAR ALL -->
+    <button class="btn-delete clear-all" onclick="clearAllTodos()">
+      Clear All
+    </button>
+  </div>
+
+  <script src="newtodo.js"></script>
+</body>
+</html>
